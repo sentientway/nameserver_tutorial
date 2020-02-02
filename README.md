@@ -17,9 +17,12 @@ make: *** [install] Error 2
 In main.go, if I change the import location from "github.com/cosmos/scaffold/cmd" to "github.com/sentenientway/nameserver_tutorial/scaffold/cmd", I receive the following error:
 
 >go: finding github.com/sentientway/nameserver_tutorial/scaffold latest
-go: finding github.com/sentientway/nameserver_tutorial/scaffold/cmd latest
-github.com/sentientway/nameserver_tutorial imports
-	github.com/sentientway/nameserver_tutorial/scaffold/cmd: no matching versions for query "latest"
-Makefile:7: recipe for target 'mod' failed
+
+>go: finding github.com/sentientway/nameserver_tutorial/scaffold/cmd latest
+
+>github.com/sentientway/nameserver_tutorial imports
+>github.com/sentientway/nameserver_tutorial/scaffold/cmd: no matching versions for query "latest"
+
+>Makefile:7: recipe for target 'mod' failed
 make: *** [mod] Error 1
 
